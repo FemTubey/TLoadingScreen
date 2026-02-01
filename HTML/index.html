@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Femboy Paradise Loading Screen</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video id="bgVideo" autoplay loop muted></video>
+
+<div id="box" class="hidden">
+    <img id="logo" src="" style="display:none;"/>
+    <h1 id="title"></h1>
+
+    <div class="section">
+        <h2>📜 Rules</h2>
+        <ul id="rulesList"></ul>
+    </div>
+
+    <div class="section">
+        <h2>💬 Discord</h2>
+        <p id="discordText"></p>
+        <a id="discordLink" target="_blank"></a>
+    </div>
+
+    <div class="section">
+        <h2>📰 Updates</h2>
+        <ul id="updatesList"></ul>
+    </div>
+
+    <div class="section">
+        <h2>🎓 Tutorial</h2>
+        <div id="slides"></div>
+        <div style="text-align:center;">
+            <button class="navBtn" onclick="prev()">◀</button>
+            <button class="navBtn" onclick="next()">▶</button>
+        </div>
+    </div>
+
+    <button id="enter">Enter Server</button>
+    <div id="audioControl" onclick="toggleAudio()"></div>
+
+</div>
+
+<audio id="bgMusic" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
